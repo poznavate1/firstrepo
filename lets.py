@@ -25,6 +25,8 @@ def character_counter_v3(s):
     counter_for_ops = 0 # счетчик операций, просто для наглядности эффективности решения
     syms_counter = {} # словарь для хранения пар символ: количество
 
+def is_palindrome(word):
+    return word == word[::-1]
 
 
 
@@ -45,6 +47,9 @@ def character_counter_v3(s):
     for sym, counter in syms_counter.items():
         print(f'количество "{sym}" = {counter}')
     print(f'{counter_for_ops=}')
+
+word = input()
+print(is_palindrome(word))
 
 
 
