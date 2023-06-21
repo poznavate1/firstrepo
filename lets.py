@@ -27,8 +27,6 @@ def character_counter_v3(s):
 
 
 
-def is_palindrome(word):
-    return word == word[::-1]
 
     """
     Идея алгоритма следующая:
@@ -48,9 +46,6 @@ def is_palindrome(word):
         print(f'количество "{sym}" = {counter}')
     print(f'{counter_for_ops=}')
 
-
-word = input()
-print(is_palindrome(word))
 
 
 character_counter_v3("abccccssds")
