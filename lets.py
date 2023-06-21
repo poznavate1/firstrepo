@@ -10,6 +10,10 @@ def character_counter_v1(s):
     print(counter_for_ops)
 
 
+
+def is_palindrome(word):
+    return word == word[::-1]
+
 def character_counter_v2(s):
     counter_for_ops = 0
     for sym in set(s):
@@ -46,6 +50,7 @@ def character_counter_v3(s):
         print(f'количество "{sym}" = {counter}')
     print(f'{counter_for_ops=}')
 
-
+word = input()
+print(is_palindrome(word))
 
 character_counter_v3("abccccssds")
